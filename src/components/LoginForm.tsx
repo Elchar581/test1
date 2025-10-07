@@ -15,7 +15,8 @@ export function LoginForm() {
     setLoading(true);
 
     try {
-      await signIn(email, password);
+      setLoading(false);
+      //await signIn(email, password);
     } catch (err) {
       setError('Неверный email или пароль');
     } finally {
